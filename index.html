@@ -1,0 +1,134 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" media="all" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="canonical" href="http://githubandchill.com"/>
+    <meta name="description" content="Github && Chill">
+    <meta name="keywords" content="Programming on fleek">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://githubandchill.com" />
+    <meta property="og:title" content="Githuba && Chill" />
+    <meta property="og:image" content="http://githubandchill.com/og_github_and_chill.png" />
+    <meta property="og:description" content="Programming on fleek" />
+    <meta property="og:site_name" content="Github && Chill" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@GithubAndChill">
+    <meta name="twitter:title" content="Github And Chill">
+    <meta name="twitter:description" content="Programming on fleek">
+    <meta name="twitter:image:src" content="http://githubandchill.com/og_github_and_chill.png">
+
+  </head>
+  <body>
+    <div class="hidden">
+      <img src='dabemoji.png' />
+    </div>
+    <div class="hero">
+      <div id="githubandchill">
+        <div class="line">Github</div>
+        <div class="line red">&&</div>
+        <div class="line">Chill</div>
+      </div>
+      <div class="action">
+        <div class="browser">
+          <div class="browser-bar">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="browser-body">
+            <video autoplay loop muted id="mainvideo">
+              <source src="dorks.mp4" type="video/mp4">
+              <source src="dorks.webm" type="video/webm">
+              <source src="dorks.ogv" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+            <button class="audiobutt">Click for Volume <img src="moji/volume.gif" /></button>
+          </div>
+        </div>
+
+        <div class="slogans">
+          <span class="typing"></span>
+        </div>
+      </div>
+    </div>
+    <div class="cta">
+      <h2 class="secondary">#mailinglist</h2>
+      <form>
+        <input placeholder="Enter your email..."/>
+        <button>submit</button>
+      </form>
+    </div>
+    <div class="swag">
+      <h2 class="secondary">#swag</h2>
+      <a href="https://threddit.com/5975">
+        <img src="https://res.cloudinary.com/dxdytksp9/image/fetch/c_limit,fl_png8,h_510,o_86,q_86,w_323/g_north,e_screen,u_SHIRT_MOCKblack_wpagna,y_-423,x_9/f_png/https://threddit.s3.amazonaws.com/uploads/shirt/default_image/5975/base_githubandchillblackshirt.png" />
+      </a>
+      <a href="https://threddit.com/5976">
+        <img src="https://res.cloudinary.com/dxdytksp9/image/fetch/c_limit,fl_png8,h_510,o_86,q_86,w_323/g_north,e_multiply,l_SHIRT_MOCK_UP_re9u8t,y_-423,x_9/f_png/https://threddit.s3.amazonaws.com/uploads/shirt/default_image/5976/base_githubandchillwhiteshirt.png" />
+      </a>
+    </div>
+    <footer>
+      <h2 class="secondary">#githubandchill</h2>
+    </footer>
+    <div style="display:none">
+      <img src="https://res.cloudinary.com/dxdytksp9/image/fetch/c_limit,fl_png8,h_510,o_86,q_86,w_323/g_north,e_screen,u_SHIRT_MOCKblack_wpagna,y_-423,x_9/f_webp/https://threddit.s3.amazonaws.com/uploads/shirt/default_image/5975/base_githubandchillblackshirt.png" />
+      <img src="https://res.cloudinary.com/dxdytksp9/image/fetch/c_limit,fl_png8,h_510,o_86,q_86,w_323/g_north,e_multiply,l_SHIRT_MOCK_UP_re9u8t,y_-423,x_9/f_webp/https://threddit.s3.amazonaws.com/uploads/shirt/default_image/5976/base_githubandchillwhiteshirt.png" />
+    </div>
+
+
+
+    <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="typed.js"></script>
+    <script>
+
+    IS_MOBILE = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+
+    $(".browser-body").click(function(){
+      console.log("click")
+      $("video").prop('muted', !$("video").prop('muted'));
+    });
+
+    if (IS_MOBILE){
+      $(".browser-body").html("<img src='dorks.gif' />")
+      $(".audiobutt").hide();
+    }
+
+    $(".typing").typed({
+        strings: [
+                  "Make coding fleek again <img src='moji/dabemoji.png' class='emoji' /> ",
+                  "Fam driven development",
+                  "Gratuitous cultural appropriation... <img src='moji/ios_emoji_neutral_face.png' class='emoji' /> ",
+                  "Code selfies",
+                  "Architecture patterns that are not sus",
+                  "Keep test coverage <img src='moji/100_emoji.png' class='emoji' /> ",
+                  "#squad",
+                  "Grab your #bae and do some pair programming",
+                  "#githubandchill",
+                  "Latency that is snatched",
+                  "Code fam",
+                  "Dev goals <img src='moji/raise.png' class='emoji' /> ",
+                  "Get woke on JavaScript",
+                  "Savage software",
+                  "That codebase was lit <img src='moji/ios_emoji_fire.png' class='emoji' /> ",
+                  "#boots",
+                  "Drag in the structured query languages",
+                  "Throughput that's high AF",
+                  "#ship",
+                  "Salty de-bugging",
+                  "Low-key integration testing",
+                  "#fire",
+                  "Coding is dope"],
+        contentType: 'html',
+        loop: true,
+        backSpeed:0,
+        backDelay:1100,
+    });
+
+    </script>
+  </body>
+
+</html>
